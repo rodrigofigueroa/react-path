@@ -1,6 +1,10 @@
 import React from 'react'
+import './App.css';
 
-
-const App = () => <h1>Calc APP</h1>
+const App = () => (
+  <section class="container">
+    <h1>Calc APP</h1>
+  </section>
+)
 
 export default App

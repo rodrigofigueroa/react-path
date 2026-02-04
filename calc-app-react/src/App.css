@@ -1,3 +1,12 @@
+:root {
+  --primary-black: #282c34;
+  --primary-white: #fff;
+}
+
+.container {
+  max-width:1024px;
+  margin: 0 auto;
+}
 .App {
   text-align: center;
 }
@@ -11,6 +20,11 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+body {
+  background-color: var( --primary-black );
+  color: var(--primary-white );
 }
 
 .App-header {
