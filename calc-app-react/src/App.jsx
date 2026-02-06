@@ -1,4 +1,5 @@
-import React from 'react'
+import React  from 'react'
+import Result from './components/Result'
 import './App.css'
 import './Calc.css'
 
@@ -6,9 +7,7 @@ const App = () => (
   <main className="container">
     <h1>Calc APP</h1>
     <section className="con-calculator">
-      <section className="input-text">
-
-      </section>
+      <Result />
       <section className='cont-1'>
           <section className="numbers">
             <button>1</button>

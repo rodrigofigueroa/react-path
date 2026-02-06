@@ -1,0 +1,11 @@
+.con-calculator .input-text {
+  width:100%;
+  background-color: #262626;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 10px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
