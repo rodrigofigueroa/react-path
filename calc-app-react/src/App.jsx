@@ -3,11 +3,13 @@ import Result from './components/Result'
 import './App.css'
 import './Calc.css'
 
-const App = () => (
+const App = () => {
+  console.log( 'Renderizando' )
+  return (
   <main className="container">
     <h1>Calc APP</h1>
     <section className="con-calculator">
-      <Result />
+      <Result value={ 0 }/>
       <section className='cont-1'>
           <section className="numbers">
             <button>1</button>
@@ -44,6 +46,6 @@ const App = () => (
       
     </section>
   </main>
-)
+)}
 
 export default App
