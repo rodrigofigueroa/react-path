@@ -1,12 +1,12 @@
 import React from 'react'
 import './Result.css'
 
-const Result = props => {
-  console.log( 'Renderizando Result', props )
+const Result = ({ value = 0 } ) => {
+  console.log( 'Renderizando Result', value )
   return (
     <section className="input-text">
       <span>
-          { props.value }
+          { value }
       </span>
     </section>
   )

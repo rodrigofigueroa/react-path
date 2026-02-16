@@ -10,7 +10,7 @@ const App = () => {
     <h1>Calc APP</h1>
     <section className="con-calculator">
       <Result 
-        value={ '2215' } 
+        value={ '0' } 
         />
       <section className='cont-1'>
           <section className="numbers">
