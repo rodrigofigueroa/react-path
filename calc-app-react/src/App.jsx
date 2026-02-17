@@ -1,10 +1,14 @@
 import React  from 'react'
 import Result from './components/Result'
+import Button from './components/Button';
 import './App.css'
 import './Calc.css'
 
 const App = () => {
   console.log( 'Renderizando' )
+  const clickHandler = text => {
+    console.log( 'clickHandler', text )
+  }
   return (
   <main className="container">
     <h1>Calc APP</h1>
@@ -14,7 +18,7 @@ const App = () => {
         />
       <section className='cont-1'>
           <section className="numbers">
-            <button>1</button>
+            <Button text="1" clickHandler={ clickHandler }>1</Button>
             <button>2</button>
             <button>3</button>
             <button>4</button>
