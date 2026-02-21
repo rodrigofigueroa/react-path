@@ -1,14 +1,25 @@
 import React  from 'react'
 import Result from './components/Result'
 import Button from './components/Button';
+import MathOperations from './components/MathOperations'
 import './App.css'
 import './Calc.css'
 
 const App = () => {
   console.log( 'Renderizando' )
+  
   const clickHandler = text => {
     console.log( 'clickHandler', text )
   }
+  
+  const clickHandlerOperations = operation => {
+    console.log( operation )
+  }
+
+  const clickHandlerEqual = operation => {
+    console.log( operation )
+  }
+
   return (
   <main className="container">
     <h1>Calc APP</h1>
@@ -18,16 +29,16 @@ const App = () => {
         />
       <section className='cont-1'>
           <section className="numbers">
-            <Button text="1" clickHandler={ clickHandler }>1</Button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
+            <Button text="1" clickHandler={ clickHandler } />
+            <Button text="2" clickHandler={ clickHandler } />
+            <Button text="3" clickHandler={ clickHandler } />
+            <Button text="4" clickHandler={ clickHandler } />
+            <Button text="5" clickHandler={ clickHandler } />
+            <Button text="6" clickHandler={ clickHandler } />
+            <Button text="7" clickHandler={ clickHandler } />
+            <Button text="8" clickHandler={ clickHandler } />
+            <Button text="9" clickHandler={ clickHandler } />
+            <Button text="0" clickHandler={ clickHandler } />
           </section>
 
           <section className="functions">
@@ -38,15 +49,7 @@ const App = () => {
       </section>
 
       <section className='cont-2'>
-
-        <section className="math-operators">      
-          <button>+</button>
-          <button>-</button>
-          <button>*</button>
-          <button>/</button>
-          <button className='round-b'>=</button>
-
-        </section>
+        <MathOperations clickOperation={ clickHandlerOperations } clickEqual={ clickHandlerEqual } />
       </section>
 
       
