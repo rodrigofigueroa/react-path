@@ -1,7 +1,8 @@
-import React  from 'react'
-import Result from './components/Result'
-import Button from './components/Button';
-import MathOperations from './components/MathOperations'
+import React                from 'react'
+import Result               from './components/Result'
+import Button               from './components/Button';
+import MathOperations       from './components/MathOperations'
+import ComponenteFunctions  from './components/Functions';
 import './App.css'
 import './Calc.css'
 
@@ -16,8 +17,16 @@ const App = () => {
     console.log( operation )
   }
 
-  const clickHandlerEqual = operation => {
-    console.log( operation )
+  const clickHandlerEqual = equal => {
+    console.log( equal )
+  }
+
+  const clickHandlerEliminar = clean => {
+    console.log( clean )
+  }
+
+  const clickHandlerLimpiar = limpiar => {
+    console.log( limpiar )
   }
 
   return (
@@ -41,10 +50,7 @@ const App = () => {
             <Button text="0" clickHandler={ clickHandler } />
           </section>
 
-          <section className="functions">
-              <button className='round-a'>Limpiar</button>
-              <button>Borrar</button>
-          </section>
+          <ComponenteFunctions clickHandlerEliminar={ clickHandlerEliminar } clickHandlerLimpiar={ clickHandlerLimpiar } />
 
       </section>
 
