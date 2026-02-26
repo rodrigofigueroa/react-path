@@ -5,8 +5,8 @@ import Button from './Button';
 const ComponenteFunctions  = ({ clickHandlerLimpiar, clickHandlerEliminar }) => {
   return (
     <section className="functions">
-        <Button type='round-a' text={ 'Limpiar' } clickHandler={ clickHandlerLimpiar } />
-        <Button type={ '' } text={ 'Borrar' }  clickHandler={ clickHandlerEliminar } />
+        <Button type='round-a button-long-text' text={ 'Limpiar' } clickHandler={ clickHandlerLimpiar } />
+        <Button type={ 'button-long-text' } text={ 'Borrar' }  clickHandler={ clickHandlerEliminar } />
     </section>
   )
 }

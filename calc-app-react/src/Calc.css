@@ -9,6 +9,7 @@
 
 .con-calculator .cont-1 {
   width: 70%;
+  height: 100%;
 }
 .con-calculator .cont-2 {
   width: 30%;
@@ -42,6 +43,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 70px;
 }
 .con-calculator .math-operators {
   width: 100%;
